@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import PersonCard from './PersonCard';
 
 
 
 export default function PersonGetter() {
-    const [person, setPerson] = useState()
+    const [person, setPerson] = useState([])
 
 
 useEffect(() => {
@@ -19,7 +20,9 @@ useEffect(() => {
 }, [])
 
 return (
-    <div></div>
+    <div>
+        <PersonCard />
+    </div>
 )
 
 }
