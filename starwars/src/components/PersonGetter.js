@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PersonCard from './PersonCard';
+import styled from 'styled-components';
 
+const NameContainer = styled.div`
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+`;
 
 
 export default function PersonGetter() {
@@ -21,7 +29,7 @@ useEffect(() => {
 }, [])
 
 return (
-    <div className='person'>
+    <NameContainer>
         {person.map(person => {
             return (
                 <PersonCard
@@ -40,6 +48,6 @@ return (
                 />
             );
         })}
-    </div>
+    </NameContainer>
 );
 }
