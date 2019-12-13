@@ -12,6 +12,7 @@ const NameCard = styled.div`
     margin: auto;
     border: 3px dashed saddlebrown;
     padding: 5%;
+    box-shadow: -15px 15px 10px tan;
 `;
 
 const Name = styled.h1`
