@@ -4,7 +4,7 @@ import React from 'react';
 const PersonCard = props => {
 return (
     <div>
-        <p>Name</p>
+        <p>Name: {props.name}</p>
         <p>Height</p>
         <p>Weight</p>
         <p>Hair Color</p>
