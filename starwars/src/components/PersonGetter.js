@@ -29,8 +29,14 @@ return (
                 name={person.name}
                 height={person.height}
                 weight={person.mass}
+                hair={person.hair_color}
+                skin={person.skin_color}
+                eyes={person.eye_color}
                 born={person.birth_year}
                 gender={person.gender}
+                films={person.films}
+                vehicles={person.vehicles}
+                starships={person.starships}
                 />
             );
         })}
